@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/etbl"
+        android:layout_alignBottom="@+id/etbl"
+        android:layout_alignParentLeft="true"
+        android:text="Blood Group" />
+
+    <EditText
+        android:id="@+id/etbl"
+        android:layout_width="114dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:ems="10" />
+
+    <Button
+        android:id="@+id/btnSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etbl"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:text="Search" />
+
+    <TextView
+        android:id="@+id/tvRe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/btnSearch"
+        android:layout_marginTop="52dp"
+        android:text="Result" />
+
+    <TextView
+        android:id="@+id/rebl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvRe"
+        android:layout_alignBottom="@+id/tvRe"
+        android:layout_alignLeft="@+id/etbl"
+        android:text="bl" />
+
+    <TextView
+        android:id="@+id/tvph"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/rebl"
+        android:layout_alignBottom="@+id/rebl"
+        android:layout_alignLeft="@+id/btnSearch"
+        android:layout_marginLeft="27dp"
+        android:text="Phone_Number" />
+
+</RelativeLayout>
